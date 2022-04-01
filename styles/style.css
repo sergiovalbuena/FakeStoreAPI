@@ -1,0 +1,7 @@
+*{
+    box-sizing: content-box;
+  }
+
+.w-80{
+  width: 90% !important;
+}
