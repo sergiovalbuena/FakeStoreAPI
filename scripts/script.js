@@ -1,8 +1,3 @@
-//In your Javascript code, you can store data by using:
-//set_cookie("shopping_cart_items", items);
-//Fetch the data by using:
-//var data = get_cookie("shopping_cart_items");
-
 const fetchData = (url_api) => {
     return new Promise((resolve, reject) => {
         const request = new XMLHttpRequest();
@@ -57,6 +52,13 @@ const anotherFunction = async (url_api) => {
 anotherFunction(API);
 
 
+//In your Javascript code, you can store data by using:
+set_cookie("shopping_cart_items", items);
+//Fetch the data by using:
+var data = get_cookie("shopping_cart_items");
+
+
+
 //TODO: boton que agregue al carrito 
 //crear la LISTA del carrito y mostrarla. 
 
@@ -66,13 +68,13 @@ anotherFunction(API);
 
 
 
-// var autocomplete=new autocomplete({
-//     input:document.getElementById("test"),
-//     key:'your auth code',
-//     itemtemplate:'<a href="http://geocoder.ca/?locate={{geocodeaddr}}" class="list-group-item list-group-item-action flex-column align-items-start"> \
-//     <img width="24px" src="img/geocodelogo.svg"/> {{geocodeaddr}} <span class="float-right badge badge-warning"> > </span> </a>'
+var autocomplete=new autocomplete({
+    input:document.getElementById("test"),
+    key:'your auth code',
+    itemtemplate:'<a href="http://geocoder.ca/?locate={{geocodeaddr}}" class="list-group-item list-group-item-action flex-column align-items-start"> \
+    <img width="24px" src="img/geocodelogo.svg"/> {{geocodeaddr}} <span class="float-right badge badge-warning"> > </span> </a>'
 
-// });
+});
 
 
 
