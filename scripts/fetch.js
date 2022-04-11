@@ -18,4 +18,4 @@ const fetchData = (url_api) => {
     });
 }
 
-export {fetchData}
+export {fetchData};
